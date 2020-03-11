@@ -1,0 +1,348 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 100%;
+  padding: 0%;
+  grid-gap: 1%;
+}
+
+#header {
+  grid-column: 1 / span 2;
+}
+#left1 {
+  grid-column: 2 / span 1;
+}
+#right1 {
+  grid-column: 2 / span 1;
+}
+#left2 {
+  grid-column: 2 / span 1;
+}
+#right2 {
+  grid-column: 2 / span 1;
+}
+
+#footer {
+  grid-column: 1 / span 2;
+  background-color: rgb(32, 32, 32);
+  color: aliceblue;
+}
+
+@media only screen and (max-width: 767px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 1%;
+  }
+
+  #header {
+    grid-column: 1 / span 1;
+  }
+  #left1 {
+    grid-column: 1 / span 1;
+  }
+  #right1 {
+    grid-column: 1 / span 1;
+  }
+  #left2 {
+    grid-column: 1 / span 1;
+  }
+  #right2 {
+    grid-column: 1 / span 1;
+  }
+  #footer {
+    grid-column: 1 / span 1;
+    background-color: rgb(32, 32, 32);
+    color: aliceblue;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 1%;
+  }
+
+  #header {
+    grid-column: 1 / span 1;
+  }
+  #left1 {
+    grid-column: 1 / span 1;
+  }
+
+  #right1 {
+    grid-column: 1 / span 1;
+  }
+  #left2 {
+    grid-column: 1 / span 1;
+  }
+  #right2 {
+    grid-column: 1 / span 1;
+  }
+  #footer {
+    grid-column: 1 / span 1;
+    background-color: rgb(32, 32, 32);
+    color: aliceblue;
+  }
+}
+
+body {
+  font-family: "Cloud", sans-serif;
+
+  background-color: black;
+}
+
+.picBg {
+  background-image: url("pic/xmen.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.picBg2 {
+  background-image: url("pic/CoverEmpty.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.picBg3 {
+  background-image: url("pic/safe.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.picBg4 {
+  background-image: url("pic/movie.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+p {
+  font-size: 20px;
+  color: white;
+  margin: 0%;
+  text-align: justify;
+}
+b {
+  color: yellow;
+}
+
+.head {
+  font-size: 30px;
+}
+
+h3 {
+  color: red;
+}
+
+.focus {
+  font-size: 30px;
+}
+h1 {
+  color: aliceblue;
+
+  padding-bottom: 0%;
+  margin-bottom: 0em;
+  margin-top: 0em;
+}
+
+h2 {
+  font-size: 50px;
+  color: gold;
+  margin: 0em;
+  padding: 0%;
+}
+.container {
+  padding: 2%;
+  background-color: #000000;
+}
+.fadedBg {
+  background-color: rgba(19, 62, 112, 0.767);
+  color: aliceblue;
+}
+
+.textContainer {
+  display: inline-block;
+  vertical-align: top;
+  line-height: normal;
+  padding: 2%;
+}
+.wrapper {
+  padding: 3%;
+}
+
+.centerBg {
+  background-color: #3f3f46;
+  padding: 2%;
+  position: absolute;
+  top: 0;
+
+  right: 20%;
+  left: 20%;
+}
+.roundContainer {
+  margin: 2px;
+
+  background-color: rgb(41, 38, 54);
+  width: 100%;
+  border-radius: 15px;
+}
+
+img {
+  width: 200px;
+  padding: 1%;
+}
+.rotate-ball {
+  width: 30%;
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+@keyframes moveball {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  100% {
+    left: 900px;
+    top: 0px;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:link {
+  color: white;
+}
+a:visited {
+  color: white;
+}
+a:hover {
+  color: gold;
+  font-size: larger;
+}
+#profileName {
+  margin-top: 2%;
+
+  color: gold;
+  line-height: 140%;
+  font-size: 260%;
+}
+#profileSurname {
+  margin-top: 2%;
+
+  color: gold;
+  line-height: 14%;
+  font-size: 260%;
+}
+#profileThaiName {
+  padding: 1%;
+  margin: 0%;
+  padding-left: 0%;
+
+  color: gold;
+  line-height: 100%;
+  font-size: 200%;
+}
+
+#profileBg {
+  background-image: url("pic/profileBG.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#alignRight {
+  padding-right: 0%;
+  margin-right: 0;
+  align-self: center;
+  text-align: right;
+  align-items: center;
+  align-content: center;
+  vertical-align: middle;
+}
+
+#inline-block {
+  display: inline-block;
+  vertical-align: middle;
+  right: 1%;
+  top: 5%;
+  background-color: rgba(95, 158, 160, 0);
+
+  position: absolute;
+  padding: 10px;
+  margin: 0%;
+  width: 200px;
+}
+#project {
+  font-size: 30px;
+}
+#imageBorder {
+  border-radius: 50%;
+  border: 3px groove gold;
+  margin: 2%;
+}
+#unityLogo {
+  padding: 20%;
+  pointer-events: none;
+  align-content: center;
+  right: 0;
+  position: absolute;
+  width: 30%;
+}
+#credit {
+  line-height: 100%;
+  font-size: 15px;
+  text-align: justify;
+  display: inline-block;
+  color: gray;
+}
+#normalHeight {
+  line-height: normal;
+}
+hr {
+  border: gold groove 3px;
+}
+#post1 {
+  padding: 1%;
+  color: aqua;
+  font-weight: bold;
+  font-size: large;
+}
+#reply1 {
+  padding: 1%;
+  color: aquamarine;
+  font-weight: bold;
+  font-size: large;
+}
+
+#reply2 {
+  padding: 1%;
+  color: gold;
+  font-weight: bold;
+  font-size: large;
+}
+form {
+  color: gold;
+  font-weight: bolder;
+  font-style: italic;
+  font-size: large;
+  padding: 2%;
+  border: red ridge 5px;
+}
+legend {
+  font-size: x-large;
+  color: yellow;
+}

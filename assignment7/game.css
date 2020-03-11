@@ -1,0 +1,46 @@
+#squares-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#squares-layer {
+  position: relative;
+  width: 500px;
+  height: 500px;
+
+  border: 3px solid black;
+}
+
+.square {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border: 3px solid black;
+}
+
+.red {
+  background-color: red;
+}
+.blue {
+  background-color: blue;
+}
+
+.green {
+  background-color: green;
+}
+
+body {
+  background-color: antiquewhite;
+  font-weight: bold;
+}
+
+.container {
+  border-radius: 15px;
+  background-color: coral;
+  padding: 1%;
+}
+legend {
+  font-weight: bolder;
+  font-size: 40px;
+}
